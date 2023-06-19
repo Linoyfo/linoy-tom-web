@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="">
+<html lang="he">
 <head>
     <meta charset="utf-8" />
     <title>מפת אתר-חלומות פפרדלה</title>
@@ -19,37 +19,94 @@
 
 
 </head>
-
+<link rel="icon" href="C:\Users\drorf\source\repos\linoy-tom-web\final\files\icon.jpg" />
 <body>
 
-    <div class="navi">
-        <a  href="index.html">עמוד הבית</a>
-        <a href="short video.html">סרטוני מתכונים</a>
-        <a href="tips.html">טיפים</a>
-        <a href="about.html">אודות</a>
-        <a href="recipes.html">מתכונים</a>
-        <a class="active" href="websitamap.html">מפת אתר</a>
-        <a href="#noLink">מוצרים לבישול</a>
-        <a href="contact">צור קשר</a>
-    </div>
-    
-        </header>
-    <main>
+
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li class="main">
+                    <a href="index.html">דף בית</a>
+                </li>
+                <li class="main">
+                    <a href="recipes.html">מתכונים</a>
+                    <ul class="sub">
+                        <li><a href="recipes.html">מתכונים לכל אירוע</a></li>
+                        <li><a href="" class="notActive">מתכונים חלביים</a></li>
+                        <li><a href="" class="notActive">מתכונים בשריים</a></li>
+                        <li><a href="" class="notActive">מתכונים טבעוניים</a></li>
+                        <li><a href="" class="notActive">מתכונים ללא גלוטן</a></li>
+                    </ul>
+                </li>
+                <li class="main">
+                    <a href="short video.html"> סרטונים קצרים</a>
+                    <ul class="sub">
+                        <li><a href="" class="notActive">מנות פסטה חמות</a></li>
+                        <li><a href="" class="notActive">מנות פסטה קרות</a></li>
+                        <li><a href="short video.html">מנות פסטה נבחרות</a></li>
+                    </ul>
+                </li>
+                <li class="main">
+                    <a href="tips.html">טיפים</a>
+                    <ul class="sub">
+                        <li><a href="" class="notActive">טיפים למתחילים</a></li>
+                        <li><a href="" class="notActive">טיפים לבישול זוגי</a></li>
+                        <li><a href="tips.html">כללי חובה במטבח האיטלקי</a></li>
+                    </ul>
+                </li>
+                <li class="main">
+                    <a href="about.html">אודות</a>
+                    <ul class="sub">
+                        <li><a href="#">אודות האתר</a></li>
+                        <li>
+                            <a href="" class="notActive">
+                                אודות עלינו
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main"><a href="contact.html">צרו קשר</a></li>
+                <li class="main"><a href="" class="notActive"> מוצרים</a></li>
+                <li class="main">
+                    <a href="websitemap.html">מפת אתר</a>
+                </li>
+
+                <li> <input type="text" placeholder="Search.."></li>
+        </nav>
+        <div class="breadcrumb">
+            <a href="index.html">דף בית</a> /
+            <span>מפת אתר</span>
+        </div>
+
+
+    </header>
+
+
+
+    <div class="head">
+        <br />
+        <br />
         <h1>מפת האתר</h1>
-        <section class="map">
+    </div>
+
+    <div class="maps">
+        <section class="map1">
             <h2>עמוד הבית</h2>
             <ul>
                 <li><a class="active" href="index.html">עמוד הבית</a></li>
             </ul>
         </section>
-        <section class="map">
+
+        <section class="map2">
             <h2>סרטוני מתכונים</h2>
             <ul>
                 <li><a href="short video.html">סרטוני מתכונים חמים</a></li>
                 <li><a href="short video.html">סרטוני מתכונים קרים</a></li>
             </ul>
         </section>
-        <section class="map">
+
+        <section class="map3">
             <h2>מתכונים</h2>
             <ul>
                 <li><a href="recipes.html">מתכונים חלביים</a></li>
@@ -58,39 +115,52 @@
                 <li><a href="recipes.html">המתכונים הנבחרים</a></li>
             </ul>
         </section>
-        <section class="map">
+
+        <section class="map4">
             <h2>טיפים</h2>
             <ul>
-                <li><a href="tips.html">טיפים למתחילם</a></li>
+                <li><a href="tips.html">טיפים למתחילים</a></li>
                 <li><a href="tips.html">טיפים לבישול ביחד</a></li>
-                <li><a href="tips.html"> טיפים כלליים</a></li>
+                <li><a href="tips.html">טיפים כלליים</a></li>
             </ul>
         </section>
-        <section class="map">
+
+        <section class="map5">
             <h2>אודות</h2>
             <ul>
                 <li><a href="about.html">אודות האתר</a></li>
                 <li><a href="about.html">אודות עלינו</a></li>
             </ul>
         </section>
-        <section class="map">
+
+        <section class="map6">
             <h2>צור קשר</h2>
             <ul>
-                <li> <a href="contact">צור קשר</a></li>
+                <li><a href="contact">צור קשר</a></li>
             </ul>
         </section>
-        <section class="map">
+
+        <section class="map7">
             <h2>מוצרים לבישול</h2>
             <ul>
                 <li><a href="#noLink">מוצרים לבישול</a></li>
             </ul>
         </section>
-        <section class="map">
+
+        <section class="map8">
             <h2>מפת אתר</h2>
             <ul>
                 <li><a href="websitamap.html">מפת אתר</a></li>
             </ul>
         </section>
-        </div>
-</body>
-</html>
+    </div>
+
+    <footer>
+        <nav aria-label="footer" id="footern" class="footer">
+            <ul>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="websitemap.html">מפת אתר</a></li>
+                <li><a href="contact">צור קשר</a></li>
+            </ul>
+        </nav>
+    </footer>

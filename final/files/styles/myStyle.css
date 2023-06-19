@@ -6,43 +6,87 @@
     text-decoration: none;
     text-align: center;
 }
+
+.notActive {
+    cursor: not-allowed
+}
+/*תפריט ניווט*/
 /* Add a black background color to the top navigation */
-.navi {
-    background-color: #333;
-    overflow: hidden;
-    float:right;
-    
+.navigation {
+    text-align: center;
+    background-color: wheat;
+    padding: 0;
+    background-origin: border-box;
+    font-family: serif;
+    font-size: 16px;
+    background-size: 100%; /* Change to 100% */
 }
 
-    /* Style the links inside the navigation bar */
-    .navi a {
-        float: right;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 20px;
+    .navigation ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
-        /* Change the color of links on hover */
-        .navi a:hover {
-            background-color: #ddd;
-            color: black;
+    .navigation li {
+        display: inline-block;
+        position: relative;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .navigation a:hover {
+            color: #fa9848;
         }
 
-        /* Add a color to the active/current link */
-        .navi a.active {
-           color:chocolate;
-            color: white;
+    .navigation .sub {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+        .navigation .sub li {
+            text-align: right;
         }
+
+        .navigation .sub span {
+            display: block;
+            padding: 5px;
+            cursor: default;
+            pointer-events: none; /* Disable click events */
+        }
+
+    .navigation li:hover > .sub {
+        display: block;
+    }
+
+    .navigation input[type=text] {
+        float: left;
+        padding: 6px;
+        border: 1px solid;
+        margin-top: 8px;
+        margin-left: 0px;
+        margin-bottom: auto;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        width: 100%; /* Add this property to make the input field expand across the entire navigation bar */
+    }
 /*עמוד סרטונים*/
 .video {
     background-color: azure;
     text-decoration-color: black;
     text-align: center;
-    padding: 45px 50px; 
+    padding: 45px 50px;
     font-family: serif;
-
 }
 
 .video1 {
@@ -53,6 +97,7 @@
     position: relative;
     text-align: center;
 }
+
 .video2 {
     margin: 0;
     width: 40%;
@@ -61,6 +106,7 @@
     position: relative;
     text-align: center;
 }
+
 .video3 {
     margin: 0;
     width: 40%;
@@ -69,6 +115,7 @@
     position: relative;
     text-align: center;
 }
+
 .video4 {
     margin: 0;
     width: 40%;
@@ -77,6 +124,7 @@
     position: relative;
     text-align: center;
 }
+
 .video5 {
     margin: 0;
     width: 40%;
@@ -85,6 +133,7 @@
     position: relative;
     text-align: center;
 }
+
 .video6 {
     margin: 0;
     width: 40%;
@@ -94,49 +143,447 @@
     text-align: center;
 }
 /*דף הבית*/
-.upperpart {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 60px;
-   
-}
-.chapter {
-    background-image: url(https://designbundles.net/maksim-lashcheuski-shop/576431-different-pasta-types-on-black-background-with-copy-space);
-    text-align: center;
-    font-size: 18px;
+.pasta {
+    width: 100%;
     margin-top: 60px;
     background-size: cover;
-    background-position: center;
-    width: 1280px;
+    background-image: url(C:\Users\drorf\source\repos\linoy-tom-web\final\files\pexels-polina-tankilevitch-4518842.jpg);
+}
+
+#homepage {
+    text-align: center;
+    background-size: cover;
+    width: 1263px;
+    height: 570px;
+    background-image: url(C:\Users\drorf\source\repos\linoy-tom-web\final\files\pexels-polina-tankilevitch-4518842.jpg);
+}
+
+#upperpart {
+    margin-top: 60px;
+    background-size: cover;
+    width: 1263px;
     height: 570px;
 }
-.map {
-    margin-bottom: 4%;
+
+#middle {
+    display: inline-block;
+    font-family: "Assistant",'Segoe UI';
+    font-style: unset;
+    position: relative;
+    bottom: 1px;
+    right: 12px;
 }
 
-    .map> ul {
-        background-color: white;
+#chapter {
+    display: inline-block;
+    font-family: "Assistant",'Segoe UI';
+    font-style: unset;
+    position: relative;
+    bottom: 1px;
+    right: 12px;
+}
+/*מפת אתר*/
+.maps {
+    background-color: white;
+    text-align: center;
+    padding: 70px 100px;
+    font-family: serif;
+    width: auto;
+    font-size: 16px;
+    position: relative;
+    text-decoration-color: darkslategrey;
+}
+
+    .maps > section {
+        margin: auto;
+    }
+
+        .maps > section > h2 {
+            margin: 0;
+        }
+
+        .maps > section > ul {
+            background-color: white;
+            text-align: center;
+            padding: 2%;
+            border-radius: 25px;
+            margin-right: 2%;
+            width: auto;
+            list-style: none; /* Remove bullets */
+        }
+
+    .maps li {
+        padding: 3%;
+        font-size: large;
+    }
+    /*map*/
+    .maps a {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+
+        .maps a:hover {
+            text-decoration: underline;
+            color: #fa9848;
+        }
+
+.head {
+    font-size: 25px;
+    margin: auto;
+    margin-top: auto;
+    width: auto;
+    background-color: cornsilk;
+}
+
+.map1,
+.map2,
+.map3,
+.map4,
+.map5,
+.map6,
+.map7,
+.map8 {
+    float: right;
+    margin: 27px;
+    text-align: center; /* Right-to-left text direction */
+}
+
+    .map1 ul,
+    .map2 ul,
+    .map3 ul,
+    .map4 ul,
+    .map5 ul,
+    .map6 ul,
+    .map7 ul,
+    .map8 ul {
+        direction: rtl; /* Right-to-left text direction */
+        text-align: right;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+
+
+
+/*footer-ניווט תחתון*/
+.footer {
+    background-color: wheat;
+    padding: 10px;
+    font-family: serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+    .footer ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer li {
         display: inline-block;
-        width: 22%;
-        text-align: center;
-        padding: 2%;
-        border-radius: 25px;
-        box-shadow: 5px 10px 8px #bbbbd0;
-        margin-right: 2%;
     }
-.map li {
-    padding: 3%;
-    font-size: large;
+
+    .footer a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 10px;
+    }
+
+        .footer a:hover {
+            color: #fa9848;
+        }
+/*פירורי לחם*/
+.breadcrumb {
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-.map a {
+    .breadcrumb a {
+        text-decoration: none;
+        color: #333;
+    }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+    .breadcrumb span {
+        color: #888;
+    }
+/*צור קשר*/
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cpath fill='%23333' d='M12 0L6 6 0 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 8px 6px;
+    padding-right: 24px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 5px;
+}
+
+#allergies {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#people-count {
+    width: 50px;
+    padding: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+}
+/*טיפים*/
+.container1 {
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    color: #666;
+}
+
+.tip {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tip-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffa07a;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.tip-content {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    z-index: 0;
+}
+
+.tip:hover .tip-number {
+    background-color: #ff7f50;
+}
+
+.tip:hover .tip-content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: #f9f9f9;
+}
+/*אודות*/
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 18px;
+    color: coral;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* Links styles */
+a {
+    color: #337ab7;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-    .map a:hover {
-        text-decoration: underline;
-        color: #fa9848;
+    a:hover {
+        color: #23527c;
     }
 
+/* Highlighted text styles */
+.highlight {
+    font-weight: bold;
+    color: #ff6347;
+}
+
+/* Quote styles */
+blockquote {
+    font-size: 20px;
+    color: #777;
+    border-left: 4px solid #ff6347;
+    padding-left: 16px;
+    margin: 16px 0;
+}
+
+/* List styles */
+ul {
+    list-style-type: disc;
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
 
 
+
+
+/*מתכונים*/
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    color: #ff0000;
+    text-align: center;
+    direction: rtl;
+}
+
+.recipe-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: #0066cc;
+    text-decoration: underline;
+    direction: rtl;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    list-style: none; /* Remove bullets */
+    direction: rtl;
+}
+
+
+
+h2 {
+    font-family: 'Courier New', monospace;
+    color: #008000;
+    direction: rtl;
+}
+
+.navigation {
+    list-style: none; /* Remove bullets */
+}
