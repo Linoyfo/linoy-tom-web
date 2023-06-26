@@ -143,12 +143,7 @@
     text-align: center;
 }
 /*דף הבית*/
-.pasta {
-    width: 100%;
-    margin-top: 60px;
-    background-size: cover;
-    background-image: url(C:\Users\drorf\source\repos\linoy-tom-web\final\files\pexels-polina-tankilevitch-4518842.jpg);
-}
+
 
 #homepage {
     text-align: center;
@@ -606,24 +601,46 @@ h2 {
 }
 
 #nextp_bt {
-  
     font-size: 20px;
     height: 40px;
-   
+    opacity: 0.8;
 }
 
 #prevp_bt {
-   
     font-size: 20px;
     height: 40px;
-   
-  
+    opacity: 0.8;
 }
 
-
-
+.img{
+    width:14%;
+}
 .pic {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    opacity: 0.6;
+}
+.active, .pic:hover{
+    opacity:1;
+}
+#pic{
+    opacity:1;
+}
+#prevp_bt:hover,
+#nextp_bt:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.numbering {
+  border:double;
+    color: white;
+    font-size: 18px;
+}
+
+.pic:hover ~ .numbering {
+    display:block;
+}
+
+.numbering.hidden {
+    display: none;
 }
