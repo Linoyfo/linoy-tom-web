@@ -326,6 +326,7 @@
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
+
 }
 
 form {
@@ -643,4 +644,13 @@ h2 {
 
 .numbering.hidden {
     display: none;
+}
+.alt {
+    border: double;
+    color: white;
+    font-size: 18px;
+}
+text {
+    border: double;
+    color: white;
 }
